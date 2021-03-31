@@ -15,7 +15,10 @@ Please be advised that this plugin has no installer wizard at the moment (and ma
 
 LibreHardwareMonitor will work and show some sensors without starting Rainmeter with Administrator privileges. However, there are some Sensors which can only be read when Rainmeter is started as Administrator.  
 To start Rainmeter as Administrator automatically, you can use for example the Windows Task Scheduler.  
-
+  
+The ListSensors utility will list the sensors available when it is started.  
+ListSensors must be run as Administrator to list the sensors available only to Administrators.
+  
 ## Configuration
   
 To use a Measure provided by the Rainmeter-LibreHardwareMonitor Plugin in a Rainmeter Skin, you must set it up correctly in the Skin's .ini file.  
