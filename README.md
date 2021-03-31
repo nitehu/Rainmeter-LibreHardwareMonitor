@@ -39,7 +39,13 @@ SensorIdentifier=/lpc/it8686e/temperature/2
 MinValue=10
 MaxValue=90
 ```
-
+  
+## FAQ
+  
+- **The LibreHardwareMonitor GUI lists a lot more sensors than ListSensors!** - Please run ListSensors (and Rainmeter) as Administrator to see all sensors.
+- **Something isn't right, the Sensor value is always 0!** - The Rainmeter-LibreHardwareMonitor Plugin writes some diagnostic information into the Rainmeter logs. You can see there if it found the configured Sensor, or run into some error.
+- **Rainmeter just crashes with this plugin!** - Please check the Application log in Windows Event Viewer. If there is a FileNotFound Exception, that usually means that the plugin couldn't load the LibreHardwareMonitor .dll. The HidSharp.dll and LibreHardwareMonitorLib.dll files must be in the same folder as Rainmeter.exe.
+  
 ## License
 
 This software is licensed under the terms of the GNU General Public License version 3 (GPLv3).
